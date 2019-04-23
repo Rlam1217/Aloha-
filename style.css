@@ -1,0 +1,599 @@
+
+
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+ */
+ 
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+ }
+
+
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+   display: block;
+ }
+ body {
+   line-height: 1;
+ }
+ ol, ul {
+   list-style: none;
+ }
+ blockquote, q {
+   quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content: '';
+   content: none;
+ }
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+
+
+/* extra resetting  */
+/* makes all images responsive */
+
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+
+/* ------------------------------------------------ */
+
+
+
+
+
+
+/* global */
+
+
+
+body{
+  font-family: 'Raleway Light';
+    font-size: 14px;
+}
+
+h1, h2{
+    font-family: 'Playfair Display';
+
+}
+
+.heading-bold {
+  font-weight: bold;
+}
+
+a:link {
+  color: #e2574c;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e2574c;
+}
+
+a:hover {
+  color: #b64036;
+}
+
+/* header */
+
+.h-container{
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+.logo{
+  max-width: 33%;
+}  
+
+.logo img{
+  max-width: 120px;
+}  
+
+.cart{
+  max-width: 33%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cart img{
+  max-width: 50px; 
+}
+
+
+/* navigation */
+
+.site-navigation{
+  
+  width: 600px;
+  text-align: center;
+  padding: 10px;
+}
+
+.site-navigation ul{
+  border-top: 1px solid grey;
+  padding: 3% 0% 0% 0%;
+
+  
+  }
+
+.site-navigation li { 
+  list-style-type: none;
+  display: inline-block;
+  background-color: white;
+  text-align: center;
+  padding: 0% 3% 0% 3%;
+}
+
+
+/* banner */
+
+.banner-container{
+    max-width: 600px;
+    height: 400px;
+    background: url(../project1/images/banner-girl.png), url(../project1/images/flower-bkgd.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
+    background-size: contain, cover;
+    display: flex;
+    
+}
+
+.banner-text{
+    width: 600px;
+    color: white;
+    font-style: normal;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+}
+
+.banner-text h1{
+    margin: 0px;
+}
+
+
+/* section about */
+
+.about-container{
+    max-width: 600px;
+    padding: 4rem 0 4rem 0;
+   
+}
+
+.about-text h2{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.heading-italics{
+
+    font-style: italic;
+}
+
+.about-text{
+    text-align: center;
+    line-height: 1.5rem;
+    font-family: 'Railway Light';
+}
+
+
+/* section category */
+
+.category-container{
+    max-width: 600px;
+    height: 1025.6px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.mens{
+    height: 25%;
+    flex-basis: 100%;
+    background: url(../project1/images/mens-category.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    
+}
+ 
+
+.trends{
+    height: 25%;
+    flex-basis: 50%;
+    background: url(../project1/images/trends-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+}
+
+.glasses{
+    height: 25%;
+    flex-basis: 50%;
+    background: url(../project1/images/glasses-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+}
+
+.sale{
+  height: 25%;
+  flex-basis: 50%;
+  
+  
+  background: url(../project1/images/sale-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+}
+
+.bags{
+  height: 25%;
+  
+  flex-basis: 50%;
+  background: url(../project1/images/bags-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+}
+
+.womens{
+  height: 25%;
+  flex-basis: 100%;
+  background: url(../project1/images/womens-category.jpg);
+  background-position: center;
+  background-size: cover ;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+}
+
+
+/* email form */
+
+.email-container{
+  max-width: 600px;
+  background: url(../project1/images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  border: 4px solid white;
+}
+
+fieldset {
+  text-align: center;
+  color: white;
+}
+
+
+/* footer */
+
+.f-container{
+  max-width: 600px;
+  background-color: #242424;
+  padding: 10%;
+}
+
+footer ul{
+  text-align: center;
+  list-style-type: none;
+  color: white;
+  line-height: 3rem;
+}
+
+footer li{
+  display: inline-block;
+}
+
+.info{
+  text-align: center;
+  color: white;
+}
+
+.contact-info{
+  line-height: 2rem;
+}
+
+.address{
+  color: #969696;
+}
+
+
+
+/* media queries responsive website  */
+
+@media all and (min-width: 601px) {
+  
+  .h-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+  }
+
+  .logo img{
+    max-width: 120px;
+    height: auto;
+  }
+
+  .cart img{
+    max-width: 50px;
+    
+  }
+
+  .cart{
+    
+    display: flex;
+    order: 1;
+  }
+  
+  /* navigation */
+  
+  .site-navigation{
+    width: 400px;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .site-navigation ul { 
+      list-style-type: none;
+      display: inline;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border-top: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+  
+      .site-navigation li {
+          display: inline-block;
+          margin: 8px;
+          text-align: center;
+      } 
+
+  .banner-container{
+    max-width: 100%;
+    height: 400px;
+    background: url(../project1/images/banner-girl.png), url(../project1/images/flower-bkgd.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 275px;
+    padding-bottom: 275px;
+    
+    }
+
+    .banner-text{
+      width: 100%;
+      color: white;
+      font-style: normal;
+      font-size: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0%;
+  }
+  
+  .banner-text h1{
+      margin: 0px;
+  }
+
+  /* section about  */
+
+  .about-container{
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.heading-italics{
+
+    font-style: italic;
+}
+
+.about-text{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+
+}
+
+.about-text h2{
+    line-height: 2rem;
+}
+
+/* section category */
+
+
+.category-container{
+  max-width: 100%;
+  height: 632px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto
+}
+
+.mens{
+  height: 50%;
+  flex-basis: 50%;
+  background: url(../project1/images/mens-category.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+  
+}
+
+
+.trends{
+  height: 50%;
+  flex-basis: 25%;
+  background: url(../project1/images/trends-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+}
+
+.glasses{
+  height: 50%;
+  flex-basis: 25%;
+  background: url(../project1/images/glasses-category.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+}
+
+.sale{
+height: 50%;
+flex-basis: 50%;
+background: url(../project1/images/sale-category.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 4px solid white;
+}
+
+.bags{
+height: 50%;
+flex-basis: 25%;
+background: url(../project1/images/bags-category.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 4px solid white;
+}
+
+.womens{
+height: 50%;
+flex-basis: 25%;
+background: url(../project1/images/womens-category.jpg);
+background-position: center;
+background-size: cover ;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 4px solid white;
+}
+
+/* email form */
+
+.email-container {
+
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 4rem;
+  background: url(../project1/images/wave-bkgd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  margin-bottom: 1rem;
+  
+
+
+}
+
+fieldset {
+
+  text-align: center;
+  color: white;
+  line-height: 1.5rem;
+}
+
+/* footer */
+
+.f-container{
+  max-width: 100%;
+  background-color: #242424;
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer li{
+  display: block;
+}
+
+}
+
