@@ -118,10 +118,8 @@ a:hover {
   max-width: 600px;
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
-  padding-bottom: .5rem;
+  padding: 1rem 2% .5rem 2%;
   flex-wrap: wrap;
-  padding: 2%;
 }
 
 .logo{
@@ -149,17 +147,18 @@ a:hover {
   
   width: 600px;
   text-align: center;
-  padding: 10px;
+
 }
 
 .site-navigation ul{
-  border-top: 1px solid grey;
-  padding: 3% 0% 0% 0%;
+  border-top: 1px solid #d7d7d7;
+  padding-top: .5rem;
 
   
   }
 
 .site-navigation li { 
+  font-size: 16px;
   list-style-type: none;
   display: inline-block;
   background-color: white;
@@ -185,7 +184,6 @@ a:hover {
     width: 600px;
     color: white;
     font-style: normal;
-    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,9 +191,14 @@ a:hover {
     margin-top: 0%;
 }
 
-.banner-text h1{
-    margin: 0px;
+.new-collection{
+  margin-bottom: 1.5rem;
 }
+
+.spring-summer{
+  font-size: 2rem;
+}
+
 
 
 /* section about */
@@ -313,6 +316,17 @@ a:hover {
   border: 4px solid white;
 }
 
+/* section products */
+
+.products{
+  max-width: 600px;
+
+}
+
+.products h2{
+  text-align: center;
+}
+
 
 /* email form */
 
@@ -370,20 +384,19 @@ footer li{
 @media all and (min-width: 601px) {
   
   .h-container{
-    max-width: 100%;
+    max-width: 1240px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    
   }
 
   .logo img{
-    max-width: 120px;
+    max-width: 160px;
     height: auto;
   }
 
   .cart img{
-    max-width: 50px;
+    max-width: 62px;
     
   }
 
@@ -396,9 +409,8 @@ footer li{
   /* navigation */
   
   .site-navigation{
-    width: 400px;
-    text-align: center;
-    padding: 0;
+    flex-basis: 60%;
+    align-self: center;
   }
   
   .site-navigation ul { 
@@ -415,8 +427,8 @@ footer li{
   
       .site-navigation li {
           display: inline-block;
-          margin: 8px;
           text-align: center;
+          margin: 8px;
       } 
 
   .banner-container{
@@ -435,7 +447,7 @@ footer li{
       width: 100%;
       color: white;
       font-style: normal;
-      font-size: 3rem;
+      
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -443,8 +455,13 @@ footer li{
       margin-top: 0%;
   }
   
-  .banner-text h1{
-      margin: 0px;
+  .new-collection{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .spring-summer{
+    font-size: 4rem;
   }
 
   /* section about  */
