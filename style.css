@@ -83,20 +83,30 @@ html {
 
 /* global */
 
-
+html{
+  scroll-behavior: smooth;
+}
 
 body{
-  font-family: 'Raleway Light';
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
     font-size: 14px;
 }
 
-h1, h2{
+
+
+h1, h2, h3{
     font-family: 'Playfair Display';
 
 }
 
 .heading-bold {
   font-weight: bold;
+}
+
+.heading-italics{
+    font-style: italic;
 }
 
 a:link {
@@ -115,7 +125,8 @@ a:hover {
 /* header */
 
 .h-container{
-  max-width: 600px;
+  max-width: 480px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2% .5rem 2%;
@@ -145,24 +156,23 @@ a:hover {
 
 .site-navigation{
   
-  width: 600px;
-  text-align: center;
+ width: 480px;
+ text-align: center;
+ padding-top: .5rem;
+
 
 }
 
 .site-navigation ul{
   border-top: 1px solid #d7d7d7;
   padding-top: .5rem;
-
-  
+  margin: 0 auto;
   }
 
 .site-navigation li { 
-  font-size: 16px;
   list-style-type: none;
   display: inline-block;
-  background-color: white;
-  text-align: center;
+ 
   padding: 0% 3% 0% 3%;
 }
 
@@ -170,7 +180,7 @@ a:hover {
 /* banner */
 
 .banner-container{
-    max-width: 600px;
+    max-width: 480px;
     height: 400px;
     background: url(../project1/images/banner-girl.png), url(../project1/images/flower-bkgd.jpg);
     background-repeat: no-repeat, repeat;
@@ -181,7 +191,7 @@ a:hover {
 }
 
 .banner-text{
-    width: 600px;
+    width: 480px;
     color: white;
     font-style: normal;
     display: flex;
@@ -204,7 +214,7 @@ a:hover {
 /* section about */
 
 .about-container{
-    max-width: 600px;
+    max-width: 480px;
     padding: 4rem 0 4rem 0;
    
 }
@@ -214,22 +224,19 @@ a:hover {
   line-height: 3rem;
 }
 
-.heading-italics{
 
-    font-style: italic;
-}
 
 .about-text{
     text-align: center;
-    line-height: 1.5rem;
-    font-family: 'Railway Light';
+    line-height: 2rem;
+    
 }
 
 
 /* section category */
 
 .category-container{
-    max-width: 600px;
+    max-width: 480px;
     height: 1025.6px;
     display: flex;
     flex-wrap: wrap;
@@ -248,7 +255,13 @@ a:hover {
     align-items: center;
     justify-content: center;
     border: 4px solid white;
+     
     
+}
+
+.mens-text{
+  font-size: 1.8rem;
+  color: white;
 }
  
 
@@ -264,6 +277,12 @@ a:hover {
     border: 4px solid white;
 }
 
+.trends-text{
+  font-size: 1.8rem;
+  color: white;
+}
+ 
+
 .glasses{
     height: 25%;
     flex-basis: 50%;
@@ -276,11 +295,15 @@ a:hover {
     border: 4px solid white;
 }
 
+.glasses-text{
+  font-size: 1.8rem;
+  color: white;
+}
+ 
+
 .sale{
   height: 25%;
   flex-basis: 50%;
-  
-  
   background: url(../project1/images/sale-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -290,9 +313,14 @@ a:hover {
   border: 4px solid white;
 }
 
+.sale-text{
+  font-size: 1.8rem;
+  color: white;
+}
+ 
+
 .bags{
   height: 25%;
-  
   flex-basis: 50%;
   background: url(../project1/images/bags-category.jpg);
   background-size: cover;
@@ -302,6 +330,12 @@ a:hover {
   justify-content: center;
   border: 4px solid white;
 }
+
+.bags-text{
+  font-size: 1.8rem;
+  color: white;
+}
+ 
 
 .womens{
   height: 25%;
@@ -316,41 +350,105 @@ a:hover {
   border: 4px solid white;
 }
 
+.womens-text{
+  font-size: 1.8rem;
+  color: white;
+}
+ 
+
 /* section products */
 
 .products{
-  max-width: 600px;
+  max-width: 480px;
+  margin: 0 auto;
+}
 
+.products h3{
+  text-align: center;
 }
 
 .products h2{
   text-align: center;
+  line-height: 4rem;
+  font-size: 2rem;
+}
+
+.products p{
+  text-align: center;
+  color: #969696;
+  line-height: 1.5rem;
+}
+.products img{
+ text-align: center;
+ width: 320px;
+ height: auto;
+}
+
+.main-carousel{
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 400px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
 }
 
 
 /* email form */
 
 .email-container{
-  max-width: 600px;
+  max-width: 480px;
   background: url(../project1/images/wave-bkgd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   border: 4px solid white;
+  padding: 4rem 0 4em 0; 
 }
+
+.email-container p, .heading-italics, .heading-bold{
+    line-height: 2rem;
+}
+
+.email-container h2{
+    font-size: 1.5rem;
+}
+
+
 
 fieldset {
   text-align: center;
   color: white;
 }
 
+#mail{
+  text-align: center;
+  border-radius: 50px 50px 50px 50px;
+  line-height: 2rem;
+  width: 50%;
+}
+
+#subscribeButton{
+  border-radius: 50px 50px 50px 50px;
+  background-color: #e2574c;
+  color: #ffffff;
+  position: relative;
+  right: 85px;
+  height: 1.9rem;
+}
 
 /* footer */
 
 .f-container{
-  max-width: 600px;
+  max-width: 480px;
+  margin: 0 auto;
   background-color: #242424;
-  padding: 10%;
+  padding: 4rem;
 }
 
 footer ul{
@@ -362,6 +460,7 @@ footer ul{
 
 footer li{
   display: inline-block;
+  background-color: #242424;
 }
 
 .info{
@@ -381,58 +480,28 @@ footer li{
 
 /* media queries responsive website  */
 
-@media all and (min-width: 601px) {
+
+@media all and (min-width: 480px) {
+    body{   
+        font-size: 16px; 
+    }
+
+    .h-container{
+        max-width: 600px;
+      }
+
+       
   
-  .h-container{
-    max-width: 1240px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  .logo img{
-    max-width: 160px;
-    height: auto;
-  }
-
-  .cart img{
-    max-width: 62px;
-    
-  }
-
-  .cart{
-    
-    display: flex;
-    order: 1;
-  }
-  
-  /* navigation */
+  /* navigation tablet */
   
   .site-navigation{
-    flex-basis: 60%;
-    align-self: center;
-  }
+    width: 600px;
+   }
   
-  .site-navigation ul { 
-      list-style-type: none;
-      display: inline;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      border-top: transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      }
   
-      .site-navigation li {
-          display: inline-block;
-          text-align: center;
-          margin: 8px;
-      } 
 
   .banner-container{
-    max-width: 100%;
+    max-width: 600px;
     height: 400px;
     background: url(../project1/images/banner-girl.png), url(../project1/images/flower-bkgd.jpg);
     background-repeat: no-repeat, repeat;
@@ -447,7 +516,6 @@ footer li{
       width: 100%;
       color: white;
       font-style: normal;
-      
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -455,140 +523,54 @@ footer li{
       margin-top: 0%;
   }
   
-  .new-collection{
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
+ 
   
-  .spring-summer{
-    font-size: 4rem;
-  }
+  
 
-  /* section about  */
+  /* section about tablet */
 
   .about-container{
-    max-width: 720px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.heading-italics{
 
-    font-style: italic;
-}
-
-.about-text{
-    text-align: center;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-
-}
 
 .about-text h2{
-    line-height: 2rem;
+    line-height: 4rem;
 }
 
-/* section category */
+/* section category tablet*/
 
 
 .category-container{
-  max-width: 100%;
-  height: 632px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto
+    max-width: 600px;
+    height: 1025.6px;
+    display: flex;
+    flex-wrap: wrap;  
 }
 
-.mens{
-  height: 50%;
-  flex-basis: 50%;
-  background: url(../project1/images/mens-category.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 4px solid white;
+
+
+
+/* products slider tablet*/
+
+.products{
+    max-width: 600px;
+    margin: 0 auto;
+  }
   
-}
 
 
-.trends{
-  height: 50%;
-  flex-basis: 25%;
-  background: url(../project1/images/trends-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 4px solid white;
-}
 
-.glasses{
-  height: 50%;
-  flex-basis: 25%;
-  background: url(../project1/images/glasses-category.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 4px solid white;
-}
 
-.sale{
-height: 50%;
-flex-basis: 50%;
-background: url(../project1/images/sale-category.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-display: flex;
-align-items: center;
-justify-content: center;
-border: 4px solid white;
-}
 
-.bags{
-height: 50%;
-flex-basis: 25%;
-background: url(../project1/images/bags-category.jpg);
-background-size: cover;
-background-repeat: no-repeat;
-display: flex;
-align-items: center;
-justify-content: center;
-border: 4px solid white;
-}
-
-.womens{
-height: 50%;
-flex-basis: 25%;
-background: url(../project1/images/womens-category.jpg);
-background-position: center;
-background-size: cover ;
-background-repeat: no-repeat;
-display: flex;
-align-items: center;
-justify-content: center;
-border: 4px solid white;
-}
-
-/* email form */
+/* email form tablet */
 
 .email-container {
 
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 4rem;
-  background: url(../project1/images/wave-bkgd.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  margin-bottom: 1rem;
+  max-width: 600px;
   
-
-
 }
 
 fieldset {
@@ -598,19 +580,278 @@ fieldset {
   line-height: 1.5rem;
 }
 
-/* footer */
-
-.f-container{
-  max-width: 100%;
-  background-color: #242424;
-  padding: 10%;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer li{
-  display: block;
-}
+/* footer tablet  */
 
 }
 
+@media all and (min-width: 600px) {
+    p, a, ul{
+        
+        font-size: 16px; 
+    }
+
+    .h-container{
+        max-width: 1240px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+      }
+    
+      .logo img{
+        max-width: 160px;
+        height: auto;
+      }
+    
+      .cart img{
+        max-width: 62px;
+        
+      }
+    
+      .cart{
+        
+        display: flex;
+        order: 1;
+      }
+      
+      /* navigation desktop*/
+      
+      .site-navigation{
+        flex-basis: 40%;
+        align-self: center;
+      }
+      
+      .site-navigation ul { 
+          list-style-type: none;
+          display: inline;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          border-top: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          }
+      
+      .site-navigation li {
+            
+            margin: 8px;
+            padding: 0% 1% 0% 1%;
+          } 
+
+
+          
+    
+      .banner-container{
+        max-width: 100%;
+        height: 400px;
+        background: url(../project1/images/banner-girl.png), url(../project1/images/flower-bkgd.jpg);
+        background-repeat: no-repeat, repeat;
+        background-position: center;
+        background-size: contain;
+        padding-top: 275px;
+        padding-bottom: 275px;
+        
+        }
+    
+        .banner-text{
+          width: 100%;
+          color: white;
+          font-style: normal;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0%;
+      }
+      
+      .new-collection{
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .spring-summer{
+        font-size: 3.5rem;
+      }
+    
+      /* section about destop */
+    
+      .about-container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .heading-italics{
+    
+        font-style: italic;
+    }
+    
+    .about-text{
+        text-align: center;
+        font-size: 1rem;
+        line-height: 3rem;
+    
+    }
+    
+    .about-text h2{
+        line-height: 4rem;
+    }
+
+
+.about-text{
+    text-align: center;
+    line-height: 2rem;
+    
+}
+    
+    /* section category desktop*/
+    
+    
+    .category-container{
+      max-width: 100%;
+      height: 632px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto
+    }
+    
+    .mens{
+      height: 50%;
+      flex-basis: 50%;
+      background: url(../project1/images/mens-category.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid white;
+      
+    }
+    
+    
+    .trends{
+      height: 50%;
+      flex-basis: 25%;
+      background: url(../project1/images/trends-category.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid white;
+    }
+    
+    .glasses{
+      height: 50%;
+      flex-basis: 25%;
+      background: url(../project1/images/glasses-category.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid white;
+    }
+    
+    .sale{
+    height: 50%;
+    flex-basis: 50%;
+    background: url(../project1/images/sale-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    }
+    
+    .bags{
+    height: 50%;
+    flex-basis: 25%;
+    background: url(../project1/images/bags-category.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    }
+    
+    .womens{
+    height: 50%;
+    flex-basis: 25%;
+    background: url(../project1/images/womens-category.jpg);
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid white;
+    
+    }
+    
+    
+    /* products slider desktop */
+    
+    .products{
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+    
+    .carousel-cell {
+      width: 320px;
+      height: 400px;
+      margin-right: 10px;
+      border-radius: 5px;
+      counter-increment: carousel-cell;
+    }
+    
+    
+    
+    /* email form desktop */
+    
+    .email-container {
+    
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 4rem;
+      background: url(../project1/images/wave-bkgd.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+      margin-bottom: 1rem;
+      
+    
+    
+    }
+    
+    fieldset {
+    
+      text-align: center;
+      color: white;
+      line-height: 1.5rem;
+    }
+    
+    /* footer desktop */
+    
+    footer{
+      max-width: 100%;
+      background-color: #242424;
+    }
+    
+    .f-container{
+      max-width: 1240px;
+      background-color: #242424;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    footer li{
+      display: block;
+      line-height: 2rem;
+      text-align: left;
+    }
+    
+    
+}
