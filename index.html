@@ -14,6 +14,10 @@
 
 </head>
 
+<a class="screen-reader-text" href="#category-container">Skip to Content</a>
+<main id="main" class="site-main" tabindex="-1">
+</main>
+
 <body>
     <header>
       <div class="h-container">
@@ -24,8 +28,7 @@
                 <img src="images/cart-icon.svg" alt="cart-icon">
                 </div> 
             <nav class="site-navigation">
-                    <ul>
-                        <li><a href="#about-text">ABOUT</a></li>
+                        <li><a href="#about-text">ABOUT US</a></li>
                         <li><a href="#category-container">SHOP</a></li>
                         <li><a href="#products">FEATURED</a></li>
                         <li><a href="#email-container">UPDATES</a></li>
@@ -73,38 +76,46 @@
   <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
   <p>BAGS</p>
   <h3>Blue Hipster backpack</h3>
-  <p>$69.00</p> </div>
+  <p>$69.00</p></div>
   
-  <div class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
+  <div class="carousel-cell">
+  <img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
   <p>DRESSES</p>
   <h3>Blue Silk Dress</h3>
   <p>$129.00</p></div>
 
-  <div class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
+  <div class="carousel-cell">
+  <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
   <p>DRESSES</p>
   <h3>Checked Stretch Dress</h3>
   <p>$129.00</p></div>
 
-  <div class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
+  <div class="carousel-cell">
+  <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
   <p>SHIRTS</p>
   <h3>Cotton Blue Shirt</h3>
   <p>$89.00</p></div>
 
-  <div class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-shirt">
+  <div class="carousel-cell">
+  <img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-shirt">
   <p>SHIRTS</p>
   <h3>Cotton Yellow TShirt</h3>
   <p>$39.00</p></div>
 
-  <div class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="Demin Overall Shorts">
+  <div class="carousel-cell">
+  <img src="images/demin-overall-shorts.jpg" alt="Demin Overall Shorts">
   <p>DEMIN</p>
   <h3>Demin Overall Shorts</h3>
   <p>$89.00</p></div>
-  <div class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
+
+  <div class="carousel-cell">
+  <img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
   <p>DRESSES</p>
   <h3>Pink Dotted Dress</h3>
   <p>$99.00</p></div>
 
-  <div class="carousel-cell"><img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
+  <div class="carousel-cell">
+  <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
   <p>DRESSES</p>
   <h3>Stretch Knit Dress</h3>
   <p>$169.00</p></div>
@@ -122,6 +133,7 @@
                 <p>Stay updated on our latest product releases, be first to find out</p>
                 <p>about upcoming sales, and get free style tips from our blog.</p>
                 <p>Unsubscribe at any time.</p>
+                <label for="mail"></label>
                    <input type="email" id="mail" name="user_mail">
                    <button id="subscribeButton" type="submit" value="Submit">Subscribe</button>
             </form>
@@ -144,10 +156,10 @@
     
           <div class="socialmedia">
             <ul>
-              <li><i class="fab fa-facebook-square"></i></li>
-              <li><i class="fab fa-twitter-square"></i></li>
-              <li><i class="fab fa-instagram"></i></li>
-              <li><i class="fab fa-pinterest-square"></i></li>
+              <li><i class="fab fa-facebook-square"> Facebook</i></li>
+              <li><i class="fab fa-twitter-square"> Twitter</i></li>
+              <li><i class="fab fa-instagram"> Instagram</i></li>
+              <li><i class="fab fa-pinterest-square"> Pinterest</i></li>
             </ul>
           </div>
         </div>
@@ -157,6 +169,7 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/flickity.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.js"></script>
 </body>
 
 </html>

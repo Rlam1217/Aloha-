@@ -853,5 +853,9 @@ fieldset {
     
     
 }
-
+#main[tabindex="-1"]:focus {
+	outline: 0;
+	color: #e2574c; 
+ }
+ 
   
