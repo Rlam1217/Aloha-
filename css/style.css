@@ -70,10 +70,31 @@ html {
   }
 
 
+  /* screen reader*/
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
+}
+
+
 
 
 /* ------------------------------------------------ */
-
 
 
 
@@ -180,10 +201,11 @@ a:hover {
 .banner-container{
     max-width: 480px;
     height: 400px;
-    background: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-    background-repeat: no-repeat, repeat;
-    background-position: center, center;
-    background-size: contain, cover;
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)),
+    url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: center, center 60px, center;
+    background-size: cover, 150px 369px, cover;
     display: flex;
     
 }
@@ -192,6 +214,7 @@ a:hover {
     width: 480px;
     color: white;
     font-style: normal;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,7 +268,7 @@ a:hover {
 .mens{
     height: 25%;
     flex-basis: 100%;
-    background: url(../images/mens-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/mens-category.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -266,7 +289,7 @@ a:hover {
 .trends{
     height: 25%;
     flex-basis: 50%;
-    background: url(../images/trends-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/trends-category.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -284,7 +307,7 @@ a:hover {
 .glasses{
     height: 25%;
     flex-basis: 50%;
-    background: url(../images/glasses-category.jpg);
+    background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/glasses-category.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -302,7 +325,7 @@ a:hover {
 .sale{
   height: 25%;
   flex-basis: 50%;
-  background: url(../images/sale-category.jpg);
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/sale-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -320,7 +343,7 @@ a:hover {
 .bags{
   height: 25%;
   flex-basis: 50%;
-  background: url(../images/bags-category.jpg);
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/bags-category.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -338,7 +361,7 @@ a:hover {
 .womens{
   height: 25%;
   flex-basis: 100%;
-  background: url(../images/womens-category.jpg);
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/womens-category.jpg);
   background-position: center;
   background-size: cover ;
   background-repeat: no-repeat;
@@ -498,15 +521,9 @@ footer li{
   
   
 
-  .banner-container{
+   .banner-container{
     max-width: 600px;
-    height: 400px;
-    background: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-    background-repeat: no-repeat, repeat;
-    background-position: center;
-    background-size: contain;
-    padding-top: 275px;
-    padding-bottom: 275px;
+    
     
     }
 
@@ -639,18 +656,17 @@ fieldset {
 
           
     
-      .banner-container{
-        max-width: 100%;
-        height: 400px;
-        background: url(../images/banner-girl.png), url(../images/flower-bkgd.jpg);
-        background-repeat: no-repeat, repeat;
-        background-position: center;
-        background-size: contain;
-        padding-top: 275px;
-        padding-bottom: 275px;
-        
-        }
-    
+          .banner-container{
+           max-width: 100%;
+            height: 550px;
+            position: relative;
+            background-size: contain, 250px 615px, contain;
+           
+            
+
+           
+            
+            }
         .banner-text{
           width: 100%;
           color: white;
@@ -659,7 +675,7 @@ fieldset {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin-top: 0%;
+          
       }
       
       .new-collection{
@@ -714,79 +730,33 @@ fieldset {
     
     .mens{
       height: 50%;
-      flex-basis: 50%;
-      background: url(../images/mens-category.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 4px solid white;
-      
+      flex-basis: 50%;  
     }
     
     
     .trends{
       height: 50%;
       flex-basis: 25%;
-      background: url(../images/trends-category.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 4px solid white;
     }
     
     .glasses{
       height: 50%;
       flex-basis: 25%;
-      background: url(../images/glasses-category.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 4px solid white;
     }
     
     .sale{
     height: 50%;
     flex-basis: 50%;
-    background: url(../images/sale-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 4px solid white;
     }
     
     .bags{
     height: 50%;
     flex-basis: 25%;
-    background: url(../images/bags-category.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 4px solid white;
     }
     
     .womens{
     height: 50%;
     flex-basis: 25%;
-    background: url(../images/womens-category.jpg);
-    background-position: center;
-    background-size: cover ;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 4px solid white;
-    
     }
     
     
