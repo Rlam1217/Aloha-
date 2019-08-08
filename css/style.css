@@ -191,7 +191,6 @@ a:hover {
 .site-navigation li { 
   list-style-type: none;
   display: inline-block;
- 
   padding: 0% 3% 0% 3%;
 }
 
@@ -424,45 +423,56 @@ a:hover {
 
 .email-container{
   max-width: 480px;
-  background: url(../images/wave-bkgd.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+  background: linear-gradient(180deg,rgba(0,0,0,.25) 0,rgba(0,0,0,.25)), url(../images/wave-bkgd.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-position: center, center bottom;
   border: 4px solid white;
-  padding: 4rem 0 4em 0; 
+  padding: 6rem 0; 
+  position: relative;
 }
 
 .email-container p, .heading-italics, .heading-bold{
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
-.email-container h2{
-    font-size: 1.5rem;
+.email-container h1{
+  font-size: 1.5rem;
 }
 
+.email-container p{
+  padding-bottom: 2.5rem;
+}
 
 
 fieldset {
-  text-align: center;
   color: white;
+  
+  
 }
 
+
 #mail{
-  text-align: center;
-  border-radius: 50px 50px 50px 50px;
-  line-height: 2rem;
-  width: 50%;
+  margin: 0 auto;
+  border-radius: 50px;
+  line-height: 2.5rem;
+  width: 80%;
+  padding-left: 2rem;
+  
+  
 }
 
 #subscribeButton{
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   background-color: #e2574c;
+  font-weight: 700;
+  width: 120px;
+  line-height: 2.1rem;
   color: #ffffff;
-  position: relative;
-  right: 85px;
-  height: 1.9rem;
+  position: absolute;
+  right: 3.3rem;
+  bottom: 6rem;
 }
-
 /* footer */
 
 .f-container{
@@ -470,6 +480,11 @@ fieldset {
   margin: 0 auto;
   background-color: #242424;
   padding: 4rem;
+}
+
+.f-container a{
+ color: white;
+ text-decoration: underline;
 }
 
 footer ul{
@@ -489,14 +504,58 @@ footer li{
   color: white;
 }
 
-.contact-info{
-  line-height: 2rem;
+.copyright{
+ padding-bottom: 14px;
+ font-size: 14px;
+ line-height: 1.2rem;
+ font-weight: 400;
+}
+
+.contact-info {
+  padding-bottom: 14px;
+  font-size: 14px;
+  line-height: 1.2rem;
+  font-weight: 400;
 }
 
 .address{
   color: #969696;
+  font-size: 14px;
+  line-height: 1.2rem;
+  font-weight: 400;
 }
 
+.fa-facebook-f{
+  min-width: 25px;
+}
+
+.fa-twitter{
+  min-width: 25px;
+}
+
+.fa-instagram{
+  min-width: 25px;
+}
+
+.fa-pinterest{
+  min-width: 25px;
+}
+
+.facebook {
+  display: none;
+}
+
+.twitter {
+  display: none;
+}
+
+.instagram {
+  display: none;
+}
+
+.pinterest {
+  display: none;
+}
 
 
 /* media queries responsive website  */
@@ -511,8 +570,6 @@ footer li{
         max-width: 600px;
       }
 
-       
-  
   /* navigation tablet */
   
   .site-navigation{
@@ -523,8 +580,6 @@ footer li{
 
    .banner-container{
     max-width: 600px;
-    
-    
     }
 
     .banner-text{
@@ -537,9 +592,6 @@ footer li{
       align-items: center;
       margin-top: 0%;
   }
-  
- 
-  
   
 
   /* section about tablet */
@@ -565,9 +617,6 @@ footer li{
     flex-wrap: wrap;  
 }
 
-
-
-
 /* products slider tablet*/
 
 .products{
@@ -575,11 +624,6 @@ footer li{
     margin: 0 auto;
   }
   
-
-
-
-
-
 /* email form tablet */
 
 .email-container {
@@ -596,6 +640,7 @@ fieldset {
 }
 
 /* footer tablet  */
+
 
 }
 
@@ -653,21 +698,14 @@ fieldset {
             padding: 0% 1% 0% 1%;
           } 
 
-
-          
-    
-          .banner-container{
+      .banner-container{
            max-width: 100%;
             height: 550px;
             position: relative;
             background-size: contain, 250px 615px, contain;
-           
-            
-
-           
-            
             }
-        .banner-text{
+
+      .banner-text{ 
           width: 100%;
           color: white;
           font-style: normal;
@@ -675,7 +713,6 @@ fieldset {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          
       }
       
       .new-collection{
@@ -703,7 +740,6 @@ fieldset {
         text-align: center;
         font-size: 1rem;
         line-height: 3rem;
-    
     }
     
     .about-text h2{
@@ -714,8 +750,7 @@ fieldset {
 .about-text{
     text-align: center;
     line-height: 2rem;
-    
-}
+    }
     
     /* section category desktop*/
     
@@ -780,25 +815,37 @@ fieldset {
     /* email form desktop */
     
     .email-container {
-    
-      max-width: 1240px;
+      max-width: 100%;
+      background-size: 100%, 1420px;
       margin: 0 auto;
-      padding: 4rem;
-      background: url(../images/wave-bkgd.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center bottom;
-      margin-bottom: 1rem;
+      margin-bottom: 1rem;   
+    }
+
+    .email-container p, .heading-italics, .heading-bold{
+      line-height: 3.5rem;
+      font-size: 2.4rem;
+      max-width: 660px;
       
-    
-    
+    }
+  
+    .email-container p{
+      font-size: 1.15rem;
+      line-height: 2rem;
+      margin: 0 auto;
+    }
+  
+    .email-container h1{
+      font-size: 2.4rem;
+    }
+
+    #mail{ 
+      width: 25%; 
     }
     
-    fieldset {
-    
-      text-align: center;
-      color: white;
-      line-height: 1.5rem;
+    #subscribeButton{
+
+      right: 35.8rem;
+      bottom: 6.3rem;
     }
     
     /* footer desktop */
@@ -813,12 +860,46 @@ fieldset {
       background-color: #242424;
       display: flex;
       justify-content: space-between;
+      margin: 0 auto;
     }
-    
+
+    .info {
+      text-align: left;
+    }
+
     footer li{
       display: block;
-      line-height: 2rem;
+      line-height: 1rem;
       text-align: left;
+      padding-bottom: 12px;
+    }
+
+    .facebook {
+      display: inline;
+      padding-left: 10px;
+      font-family: 'Raleway';
+      
+    }
+    
+    .twitter {
+      display: inline;
+      padding-left: 10px;
+      font-family: 'Raleway';
+      font-size: 16px;
+    }
+    
+    .instagram {
+      display: inline;
+      padding-left: 10px;
+      font-family: 'Raleway';
+      
+    }
+    
+    .pinterest {
+      display: inline;
+      padding-left: 10px;
+      font-family: 'Raleway';
+      
     }
     
     
