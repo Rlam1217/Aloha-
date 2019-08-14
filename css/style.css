@@ -435,6 +435,7 @@ a:hover {
 .products{
   max-width: 480px;
   margin: 0 auto;
+  padding-top: 56px;
 }
 
 .products h3{
@@ -443,8 +444,8 @@ a:hover {
 
 .products h2{
   text-align: center;
-  line-height: 4rem;
   font-size: 2rem;
+  padding-bottom: 56px;
 }
 
 .products p{
@@ -483,7 +484,7 @@ a:hover {
   background-position: center, center bottom;
   border: 4px solid white;
   padding: 56px 0; 
-  margin-bottom: 8px;
+  margin: 68px 0px 8px 0px;
 }
 
 form {
@@ -733,6 +734,10 @@ flex-basis: 50%;
     max-width: 768px;
     margin: 0 auto;
   }
+
+  .carousel-cell {
+    width: 50%;
+  }
   
 /* email form tablet */
 
@@ -959,7 +964,7 @@ fieldset {
     }
     
     .carousel-cell {
-      width: 320px;
+      width: 25%;
       height: 400px;
       margin-right: 10px;
       border-radius: 5px;
