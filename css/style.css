@@ -257,6 +257,7 @@ a:hover {
     height: 1025.6px;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .mens{
@@ -270,13 +271,23 @@ a:hover {
     align-items: center;
     justify-content: center;
     border: 4px solid white;   
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
-.mens-text{
-  font-size: 1.8rem;
-  color: white;
+
+.mens a:link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
- 
+
+.mens a:visited {
+  color: #fff;
+}
+
+.mens a:hover{
+  color: #ffe9b8;
+}
 
 .trends{
     height: 25%;
@@ -288,11 +299,21 @@ a:hover {
     align-items: center;
     justify-content: center;
     border: 4px solid white;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
-.trends-text{
-  font-size: 1.8rem;
-  color: white;
+.trends a:link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.trends a:visited {
+  color: #fff;
+}
+
+.trends a:hover{
+  color: #ffe9b8;
 }
  
 
@@ -306,11 +327,21 @@ a:hover {
     align-items: center;
     justify-content: center;
     border: 4px solid white;
+    text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
-.glasses-text{
-  font-size: 1.8rem;
-  color: white;
+.glasses a:link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.glasses a:visited {
+  color: #fff;
+}
+
+.glasses a:hover{
+  color: #ffe9b8;
 }
  
 
@@ -324,11 +355,21 @@ a:hover {
   align-items: center;
   justify-content: center;
   border: 4px solid white;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
-.sale-text{
-  font-size: 1.8rem;
-  color: white;
+.sale a:link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.sale a:visited {
+  color: #fff;
+}
+
+.sale a:hover{
+  color: #ffe9b8;
 }
  
 
@@ -342,11 +383,21 @@ a:hover {
   align-items: center;
   justify-content: center;
   border: 4px solid white;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
-.bags-text{
-  font-size: 1.8rem;
-  color: white;
+.bags a:link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.bags a:visited {
+  color: #fff;
+}
+
+.bags a:hover{
+  color: #ffe9b8;
 }
  
 
@@ -361,11 +412,21 @@ a:hover {
   align-items: center;
   justify-content: center;
   border: 4px solid white;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
 }
 
-.womens-text{
-  font-size: 1.8rem;
-  color: white;
+.womens a:link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.womens a:visited {
+  color: #fff;
+}
+
+.womens a:hover{
+  color: #ffe9b8;
 }
  
 
@@ -581,17 +642,17 @@ footer li{
     }
 
     .h-container{
-        max-width: 600px;
+        max-width: 768px;
       }
 
   /* navigation tablet */
   
   .site-navigation{
-    width: 600px;
+    width: 768px;
    }
   
    .banner-container{
-    max-width: 600px;
+    max-width: 768px;
     }
 
     .banner-text{
@@ -609,7 +670,7 @@ footer li{
   /* section about tablet */
 
   .about-container{
-    max-width: 600px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
@@ -621,23 +682,62 @@ footer li{
 
 
 .category-container{
-    max-width: 600px;
-    height: 1025.6px;
+    max-width: 100%;
+    height: 350px;
     display: flex;
     flex-wrap: wrap;  
+    margin: 0 auto;
+}
+
+.mens{
+  height: 50%;
+  flex-basis: 50%;
+}
+
+.trends{
+  height: 50%;
+  flex-basis: 25%;
+}
+
+.trends a:visited {
+  color: #fff;
+}
+
+.trends a:hover{
+  color: #ffe9b8;
+}
+
+.glasses{
+  height: 50%;
+  flex-basis: 25%;
+}
+
+.sale{
+height: 50%;
+flex-basis: 25%;
+}
+
+.bags{
+height: 50%;
+flex-basis: 25%;
+}
+
+.womens{
+height: 50%;
+flex-basis: 50%;
 }
 
 /* products slider tablet*/
 
 .products{
-    max-width: 600px;
+    max-width: 768px;
     margin: 0 auto;
   }
   
 /* email form tablet */
 
 .email-container {
-  max-width: 600px;
+  max-width: 768px;
 }
 
 .signup-wrapper {
@@ -666,12 +766,12 @@ fieldset {
 /* footer tablet  */
 
 .f-container{
-  max-width: 600px;
+  max-width: 768px;
   }
 
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 768px) {
     p, a, ul{
         
         font-size: 16px; 
@@ -786,40 +886,70 @@ fieldset {
       height: 632px;
       display: flex;
       flex-wrap: wrap;
-      margin: 0 auto
+      margin: 0 auto;
     }
     
     .mens{
       height: 50%;
-      flex-basis: 50%;  
+      flex-basis: 50%;
     }
-    
+
+    .mens a:link {
+      font-size: 2.1rem;
+    }
     
     .trends{
       height: 50%;
       flex-basis: 25%;
+    }
+
+    .trends a:link {
+      font-size: 2.1rem;
+    }
+    
+    .trends a:visited {
+      color: #fff;
+    }
+
+    .trends a:hover{
+      color: #ffe9b8;
     }
     
     .glasses{
       height: 50%;
       flex-basis: 25%;
     }
+
+    .glasses a:link {
+      font-size: 2.1rem;
+    }
     
     .sale{
     height: 50%;
-    flex-basis: 50%;
+    flex-basis: 25%;
+    }
+
+    .sale a:link {
+      font-size: 2.1rem;
     }
     
     .bags{
     height: 50%;
     flex-basis: 25%;
     }
+
+    .bags a:link {
+      font-size: 2.1rem;
+    }
     
     .womens{
     height: 50%;
-    flex-basis: 25%;
+    flex-basis: 50%;
     }
     
+    .womens a:link {
+      font-size: 2.1rem;
+    }
     
     /* products slider desktop */
     
