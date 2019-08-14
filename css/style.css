@@ -181,8 +181,10 @@ a:hover {
 
 .site-navigation ul{
   border-top: 1px solid #d7d7d7;
-  padding-top: .5rem;
   margin: 0 auto;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
   }
 
 .site-navigation li { 
@@ -651,6 +653,10 @@ footer li{
   .site-navigation{
     width: 768px;
    }
+
+   .site-navigation li { 
+    padding: 0% 1% 0% 1%;
+  }
   
    .banner-container{
     max-width: 768px;
@@ -816,8 +822,8 @@ fieldset {
           list-style-type: none;
           display: inline;
           text-align: center;
-          margin: 0;
-          padding: 0;
+          margin-right: 25%;
+          padding: 0px;
           border-top: transparent;
           display: flex;
           justify-content: center;
@@ -826,7 +832,7 @@ fieldset {
       
       .site-navigation li {
             margin: 8px;
-            padding: 0% 1% 0% 1%;
+            padding: 0% 3% 0% 3%;
           } 
 
       .banner-container{
