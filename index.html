@@ -17,9 +17,7 @@
 <body>
     <header>
         <a class="screen-reader-text" href="#mens">Skip to content</a>
-        <main id="mens" class="mens" tabindex="-1">
-        </main>
-
+        
       <div class="h-container">
             <div class="logo">
                 <img src="images/aloha-logo.svg" alt="aloha-logo">
@@ -27,7 +25,8 @@
                 <div class="cart">
                 <img src="images/cart-icon.svg" alt="cart-icon">
                 </div> 
-            <nav class="site-navigation">
+            <!-- Nav Bar -->
+            <nav class="site-navigation" id="site-navigation">
                     <ul>
                         <li><a href="#about-text">ABOUT</a></li>
                         <li><a href="#category-container">SHOP</a></li>
@@ -37,14 +36,14 @@
                 </nav>
                 </div>               
     </header>
-    
+    <!-- Banner Image -->
     <section class="banner-container">
         <div class="banner-text">
             <h1 class="new-collection">NEW COLLECTION</h1>
             <h1 class="spring-summer">Spring/Summer 2019</h1>
         </div>
     </section>
-
+    <!-- About Container -->
     <section class="about-container">
         <div class="about-text" id="about-text">
             <h2><span class="heading-italics">Hand-Crafted</span> <span class="heading-bold">Styles</span></h2>
@@ -53,16 +52,16 @@
         </div>
 
     </section>
-
+    <!-- Category Container -->
     <section class="category-container" id="category-container">
-            <div class="mens"><a href="#mens">MEN'S</a></div>
-            <div class="trends"><a href="#trends">TRENDS</a></div>
-            <div class="glasses"><a href="#glasses">GLASSES</a></div>
-            <div class="sale"><a href="#sale">SALE</a></div>
-            <div class="bags"><a href="#bags">BAGS</a></div>
-            <div class="womens"><a href="#womens">WOMEN'S</a></div>
+            <div class="mens"><a href="#site-navigation">MEN'S</a></div>
+            <div class="trends"><a href="#site-navigation">TRENDS</a></div>
+            <div class="glasses"><a href="#site-navigation">GLASSES</a></div>
+            <div class="sale"><a href="#site-navigation">SALE</a></div>
+            <div class="bags"><a href="#site-navigation">BAGS</a></div>
+            <div class="womens"><a href="#site-navigation">WOMEN'S</a></div>
     </section>
-
+    <!-- Products Container -->
     <section>
       <div class="products" id="products">
           <h2><span class="heading-italics">Most Loved</span> <span class="heading-bold">Products</span></h2>
@@ -110,7 +109,7 @@
   </div>
 </div>  
     </section>
- 
+        <!-- Email Container -->
         <section class="email-container" id="email-container">
           <fieldset>     
             <form>
@@ -127,7 +126,7 @@
             </form>
          </fieldset>  
       </section>
-
+      <!-- Footer -->
       <footer>
         <div class="f-container">
           <div class="info">
@@ -136,14 +135,13 @@
               <p>Powered by HTML and CSS.</p>
             </div>
             <div class="contact-info">
-            <p>604-604-6040. <a href ="mailto: info@alohaapparel.com">info@alohaapparel.com</a></p>
+            <p>604-604-6040. <a href ="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
             </div>
             <div class="address">
               <p>1490 W Broadway</p>
               <p>Vancouver, BC, Canada</p>
             </div>
           </div>
-    
           <div class="socialmedia">
             <ul>
               <li><i class="fab fa-facebook-f"><span class="facebook">Facebook</span></i></li>
@@ -157,9 +155,11 @@
 
 <!-- javascript -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/subscribe.js"></script>
 <script src="js/flickity.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tota11y/0.1.6/tota11y.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/smoothscroll.js"></script>
 </body>
 
 </html>
