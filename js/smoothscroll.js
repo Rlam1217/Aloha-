@@ -1,6 +1,6 @@
 // $(document).ready(function {
 
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
     $('a[href*="#"]').on('click', function(e) {
         e.preventDefault()
       
@@ -12,4 +12,4 @@ jQuery(document).ready(function($) {
           'linear'
         )
       })
-}(jQuery));
+});
